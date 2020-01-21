@@ -56,11 +56,13 @@ public class AutoCorectUserName {
 	    	if(diplayedMsg.contains("The account sign-in was incorrect")) {
 	    		tearDown();
 	    	}
+	    }else {
+	    	driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Contact Information'])[1]/following::span[1]")).click();
+		    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Request a password to change your account password.'])[1]/following::button[1]")).click();
+		    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Search'])[3]/following::span[1]")).click();
+		    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Wishlist'])[2]/following::a[1]")).click();	
 	    }
-	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Contact Information'])[1]/following::span[1]")).click();
-	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Request a password to change your account password.'])[1]/following::button[1]")).click();
-	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Search'])[3]/following::span[1]")).click();
-	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Wishlist'])[2]/following::a[1]")).click();
+	    
   }
 
   @AfterClass(alwaysRun = true)
