@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.finexus.tests.AddToCard">
+      <class name="com.finexus.tests.EverLastLogin">
         <methods>
-          <include name="testAddToCard"/>
           <include name="setUp"/>
+          <include name="testEverLastLogin"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.finexus.tests.AddToCard -->
+      </class> <!-- com.finexus.tests.EverLastLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

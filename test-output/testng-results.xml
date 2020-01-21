@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="90373" started-at="2020-01-20T23:13:26 PKT" finished-at="2020-01-20T23:14:56 PKT">
+  <suite name="Default suite" duration-ms="157903" started-at="2020-01-21T17:56:28 PKT" finished-at="2020-01-21T17:59:06 PKT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="90373" started-at="2020-01-20T23:13:26 PKT" finished-at="2020-01-20T23:14:56 PKT">
-      <class name="com.finexus.tests.AddToCard">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.finexus.tests.AddToCard@3d99d22e]" name="setUp" is-config="true" duration-ms="4188" started-at="2020-01-20T23:13:26 PKT" finished-at="2020-01-20T23:13:30 PKT">
+    <test name="Default test" duration-ms="157903" started-at="2020-01-21T17:56:28 PKT" finished-at="2020-01-21T17:59:06 PKT">
+      <class name="com.finexus.tests.EverLastLogin">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.finexus.tests.EverLastLogin@7c29daf3]" name="setUp" is-config="true" duration-ms="9802" started-at="2020-01-21T17:56:28 PKT" finished-at="2020-01-21T17:56:38 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testAddToCard()[pri:0, instance:com.finexus.tests.AddToCard@3d99d22e]" name="testAddToCard" duration-ms="84927" started-at="2020-01-20T23:13:30 PKT" finished-at="2020-01-20T23:14:55 PKT">
+        <test-method status="FAIL" signature="testEverLastLogin()[pri:0, instance:com.finexus.tests.EverLastLogin@7c29daf3]" name="testEverLastLogin" duration-ms="147087" started-at="2020-01-21T17:56:38 PKT" finished-at="2020-01-21T17:59:05 PKT">
           <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
               <![CDATA[element not interactable
@@ -19,8 +19,8 @@
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-JCEGEB0', ip: '192.168.50.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\NOORTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8fe8e8125afcaa18cfa6a221e7406d67]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\NOORTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2bf6e28d79cbd75bc3426c1bda2552ae]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -28,8 +28,8 @@ Session ID: 8fe8e8125afcaa18cfa6a221e7406d67]]>
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-JCEGEB0', ip: '192.168.50.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\NOORTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56998}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8fe8e8125afcaa18cfa6a221e7406d67
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\NOORTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2bf6e28d79cbd75bc3426c1bda2552ae
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -42,7 +42,7 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-at com.finexus.tests.AddToCard.testAddToCard(AddToCard.java:36)
+at com.finexus.tests.EverLastLogin.testEverLastLogin(EverLastLogin.java:37)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -76,12 +76,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddToCard -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.finexus.tests.AddToCard@3d99d22e]" name="tearDown" is-config="true" duration-ms="1210" started-at="2020-01-20T23:14:55 PKT" finished-at="2020-01-20T23:14:56 PKT">
+        </test-method> <!-- testEverLastLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.finexus.tests.EverLastLogin@7c29daf3]" name="tearDown" is-config="true" duration-ms="969" started-at="2020-01-21T17:59:05 PKT" finished-at="2020-01-21T17:59:06 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.finexus.tests.AddToCard -->
+      </class> <!-- com.finexus.tests.EverLastLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
