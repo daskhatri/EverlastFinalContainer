@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.finexus.tests.AutoCorectUserName">
+      <class name="com.finexus.tests.AddToCard">
         <methods>
+          <include name="testAddToCard"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testAutoCorectUserName" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.finexus.tests.AutoCorectUserName -->
+      </class> <!-- com.finexus.tests.AddToCard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

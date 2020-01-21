@@ -32,7 +32,7 @@ public class AutoCorectUserName {
 		return data;
 	}
   @Test(dataProvider = "getLoginData")
-  public void testAutoCorectUserName(String userName, String password, String loginUrl) throws Exception {
+  public void testAutoCorectUserName(String userName, String password, String loginUrl, String expectedResult) throws Exception {
 	  driver.get(loginUrl);
 	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Search'])[3]/following::span[1]")).click();
 	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Search'])[3]/following::a[1]")).click();
@@ -53,7 +53,7 @@ public class AutoCorectUserName {
 	    String diplayedMsg;
 	    if(exists) {
 	    	diplayedMsg = driver.findElement( By.xpath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div") ).getText();
-	    	if(!diplayedMsg.contains("The account sign-in was incorrect")) {
+	    	if(!diplayedMsg.contains(expectedResult)) {
 	    		Assert.fail();
 	    	}
 	    }else {

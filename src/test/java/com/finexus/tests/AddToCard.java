@@ -1,4 +1,5 @@
-package com.finexus.tests; import io.github.bonigarcia.wdm.WebDriverManager;
+package com.finexus.tests; 
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
