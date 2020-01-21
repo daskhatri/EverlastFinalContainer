@@ -53,7 +53,7 @@ public class AutoCorectUserName {
 	    String diplayedMsg;
 	    if(exists) {
 	    	diplayedMsg = driver.findElement( By.xpath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div") ).getText();
-	    	if(diplayedMsg.toLowerCase().contains("The account sign-in was incorrect")) {
+	    	if(diplayedMsg.contains("The account sign-in was incorrect")) {
 	    		tearDown();
 	    	}
 	    }
