@@ -48,11 +48,23 @@ public class AutoCorectUserName {
 	    boolean exists = driver.findElements( By.xpath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div") ).size() != 0;
 	    driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 //	    String msgIndication = driver.findElement().getText();
-//	    String diplayedMsg;
-//	    if(exists) {
-//	    	diplayedMsg = driver.findElement( By.xpath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div") ).getText();
-//	    	Assert.fa
-//	    }
+	   
+	    Thread.sleep(5000);
+		String txnMessage = driver
+				.findElement(By.xpath("//*[@id=\"messages\"]/tbody/tr[2]/td[2]/table[2]/tbody/tr/td")).getText();
+
+		if (txnMessage.toLowerCase().indexOf("Txn Complete".toLowerCase()) == -1) {
+			// Call take screenshot function
+//			T24AuthorizationFailCase.takeSnapShot(driver, "D://test.png");
+			throw new Exception("Transaction failed");
+		}
+	    String diplayedMsg;
+	    if(exists) {
+	    	diplayedMsg = driver.findElement( By.xpath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div") ).getText();
+	    	if(diplayedMsg.toLowerCase().contains("The account sign-in was incorrect")) {
+	    		tearDown();
+	    	}
+	    }
 	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Contact Information'])[1]/following::span[1]")).click();
 	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Request a password to change your account password.'])[1]/following::button[1]")).click();
 	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Search'])[3]/following::span[1]")).click();
