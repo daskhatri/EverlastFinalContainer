@@ -50,14 +50,6 @@ public class AutoCorectUserName {
 //	    String msgIndication = driver.findElement().getText();
 	   
 	    Thread.sleep(5000);
-		String txnMessage = driver
-				.findElement(By.xpath("//*[@id=\"messages\"]/tbody/tr[2]/td[2]/table[2]/tbody/tr/td")).getText();
-
-		if (txnMessage.toLowerCase().indexOf("Txn Complete".toLowerCase()) == -1) {
-			// Call take screenshot function
-//			T24AuthorizationFailCase.takeSnapShot(driver, "D://test.png");
-			throw new Exception("Transaction failed");
-		}
 	    String diplayedMsg;
 	    if(exists) {
 	    	diplayedMsg = driver.findElement( By.xpath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div") ).getText();
