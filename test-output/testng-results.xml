@@ -1,35 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="157903" started-at="2020-01-21T17:56:28 PKT" finished-at="2020-01-21T17:59:06 PKT">
+  <suite name="Default suite" duration-ms="130003" started-at="2020-01-21T19:54:45 PKT" finished-at="2020-01-21T19:56:55 PKT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="157903" started-at="2020-01-21T17:56:28 PKT" finished-at="2020-01-21T17:59:06 PKT">
-      <class name="com.finexus.tests.EverLastLogin">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.finexus.tests.EverLastLogin@7c29daf3]" name="setUp" is-config="true" duration-ms="9802" started-at="2020-01-21T17:56:28 PKT" finished-at="2020-01-21T17:56:38 PKT">
+    <test name="Default test" duration-ms="130003" started-at="2020-01-21T19:54:45 PKT" finished-at="2020-01-21T19:56:55 PKT">
+      <class name="com.finexus.tests.AutoCorectUserName">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.finexus.tests.AutoCorectUserName@5a8806ef]" name="setUp" is-config="true" duration-ms="3499" started-at="2020-01-21T19:54:45 PKT" finished-at="2020-01-21T19:54:48 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testEverLastLogin()[pri:0, instance:com.finexus.tests.EverLastLogin@7c29daf3]" name="testEverLastLogin" duration-ms="147087" started-at="2020-01-21T17:56:38 PKT" finished-at="2020-01-21T17:59:05 PKT">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method status="FAIL" signature="testAutoCorectUserName(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.finexus.tests.AutoCorectUserName@5a8806ef]" name="testAutoCorectUserName" duration-ms="60566" started-at="2020-01-21T19:54:49 PKT" data-provider="getLoginData" finished-at="2020-01-21T19:55:50 PKT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[blubd.softtech@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[demotest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.everlast.com/]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element not interactable
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='Contact Information'])[1]/following::span[1]"}
   (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-JCEGEB0', ip: '192.168.50.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\NOORTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2bf6e28d79cbd75bc3426c1bda2552ae]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\NOORTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61671}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: adf6ffa88c53749bebf01e6902506fcd
+*** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Contact Information'])[1]/following::span[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='Contact Information'])[1]/following::span[1]"}
   (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-JCEGEB0', ip: '192.168.50.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\NOORTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56739}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2bf6e28d79cbd75bc3426c1bda2552ae
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\NOORTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61671}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: adf6ffa88c53749bebf01e6902506fcd
+*** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Contact Information'])[1]/following::span[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -40,9 +61,11 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-at com.finexus.tests.EverLastLogin.testEverLastLogin(EverLastLogin.java:37)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at com.finexus.tests.AutoCorectUserName.testAutoCorectUserName(AutoCorectUserName.java:44)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -73,15 +96,125 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEverLastLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.finexus.tests.EverLastLogin@7c29daf3]" name="tearDown" is-config="true" duration-ms="969" started-at="2020-01-21T17:59:05 PKT" finished-at="2020-01-21T17:59:06 PKT">
+        </test-method> <!-- testAutoCorectUserName -->
+        <test-method status="FAIL" signature="testAutoCorectUserName(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.finexus.tests.AutoCorectUserName@5a8806ef]" name="testAutoCorectUserName" duration-ms="39826" started-at="2020-01-21T19:55:50 PKT" data-provider="getLoginData" finished-at="2020-01-21T19:56:30 PKT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongId@wrong.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[demotest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.everlast.com/]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='Contact Information'])[1]/following::span[1]"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-JCEGEB0', ip: '192.168.50.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\NOORTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61671}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: adf6ffa88c53749bebf01e6902506fcd
+*** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Contact Information'])[1]/following::span[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(.//*[normalize-space(text()) and normalize-space(.)='Contact Information'])[1]/following::span[1]"}
+  (Session info: chrome=76.0.3809.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-JCEGEB0', ip: '192.168.50.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\NOORTE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61671}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: adf6ffa88c53749bebf01e6902506fcd
+*** Element info: {Using=xpath, value=(.//*[normalize-space(text()) and normalize-space(.)='Contact Information'])[1]/following::span[1]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at com.finexus.tests.AutoCorectUserName.testAutoCorectUserName(AutoCorectUserName.java:44)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoCorectUserName -->
+        <test-method status="PASS" signature="testAutoCorectUserName(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.finexus.tests.AutoCorectUserName@5a8806ef]" name="testAutoCorectUserName" duration-ms="24339" started-at="2020-01-21T19:56:30 PKT" data-provider="getLoginData" finished-at="2020-01-21T19:56:54 PKT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[blubd.softtech@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[everlast#123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.everlast.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutoCorectUserName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.finexus.tests.AutoCorectUserName@5a8806ef]" name="tearDown" is-config="true" duration-ms="866" started-at="2020-01-21T19:56:54 PKT" finished-at="2020-01-21T19:56:55 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.finexus.tests.EverLastLogin -->
+      </class> <!-- com.finexus.tests.AutoCorectUserName -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -32,7 +32,7 @@ public class TestUtil {
 	// public static String TESTDATA_SHEET_PATH =
 	// "E:\\TestDataFile\\TestCaseData.xlsx";
 
-	public static String TESTDATA_SHEET_PATH = "D:\\mirtalk-ws-eclipse\\T24TestAutomationContainer\\src\\test\\java\\com\\finexus\\testDataProvider\\TestCasesData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "src\\test\\java\\com\\finexus\\testDataProvider\\TestCasesData.xlsx";
 
 	public static Object[][] getTestData(String sheetName) {
 
