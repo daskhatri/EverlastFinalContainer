@@ -55,6 +55,8 @@ public class AutoCorectUserName {
 	    	diplayedMsg = driver.findElement( By.xpath("//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div") ).getText();
 	    	if(diplayedMsg.contains("The account sign-in was incorrect")) {
 	    		tearDown();
+	    	}else {
+	    		Assert.fail();
 	    	}
 	    }else {
 	    	driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Contact Information'])[1]/following::span[1]")).click();
